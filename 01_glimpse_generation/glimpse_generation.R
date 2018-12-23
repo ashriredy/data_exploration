@@ -2,7 +2,7 @@
 if(!require("dplyr"))     {install.packages("dplyr"     ,dependencies = T)}; library("dplyr")
 if(!require("data.table")){install.packages("data.table",dependencies = T)}; library("data.table")
 rm(list=ls()); cat("\014"); invisible(gc());
-# Expand console to the tallest and widest dimensions possible, as glimpse() auto adjusts the output  
+# Expand console to the tallest and widest dimensions possible, as glimpse() adjusts the output to console area 
 
 #### 01 Reading dataset ####
 dataset = fread("mtcars.csv")
